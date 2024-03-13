@@ -90,21 +90,21 @@ container.addEventListener("click", (e) => {
   calculateSelectedSeats();
 });
 
-// const calculateSelectedSeats = () => {
-//   const selectedSeats = document.querySelectorAll(".seat.selected");
-//   const selectedIndex = Array.from(selectedSeats).map((seat) => {
-//     return [...seat.parentNode.children].indexOf(seat);
-//   });
-
 const calculateSelectedSeats = () => {
-  const selectedSeatsIndexes = [];
-  const seats = document.querySelectorAll(".seat");
-
-  seats.forEach((seat, index) => {
-    if (seat.classList.contains("selected")) {
-      selectedSeatsIndexes.push(index);
-    }
+  const selectedSeats = document.querySelectorAll(".seat.selected");
+  const selectedIndex = Array.from(selectedSeats).map((seat) => {
+    return [...seat.parentNode.children].indexOf(seat);
   });
+
+// const calculateSelectedSeats = () => {
+//   const selectedSeatsIndexes = [];
+//   const seats = document.querySelectorAll(".seat");
+
+//   seats.forEach((seat, index) => {
+//     if (seat.classList.contains("selected")) {
+//       selectedSeatsIndexes.push(index);
+//     }
+//   });
   localStorage.setItem("selectedSeats:", JSON.stringify(selectedIndex));
 
   const selectedSeatsCount = selectedSeats.length;
