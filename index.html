@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cinema</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- SCREEN -->
+    <div class="screen">
+      <form action="" class="form">
+        <div class="screen-content">
+          <label class="text-light me-5">Enter a movie title:</label>
+          <input
+            id="input"
+            type="text"
+            class="m-2 p-1"
+            placeholder="e.g Lord Of The Rings"
+          />
+          <button type="submit" class="text-bg-info text-light p-1 btn">
+            Search
+          </button>
+        </div>
+        <div class="d-flex justify-content-center">
+          <p class="text-light text-bg-primary p-1 message">Welcome!</p>
+        </div>
+      </form>
+    </div>
+    <!-- Movie Info -->
+    <section class="movieInfo light d-block py-5">
+      <div class="container container-fluid">
+        <article class="postcard light blue">
+          <a href="#" class="postcard_img_link">
+            <img
+              class="movieImg float-end"
+              src="https://picsum.photos/1000/1000"
+              style="width: 300px"
+              alt="Movie Image"
+            />
+          </a>
+          <div class="postcard_text t-dark">
+            <h1 class="postcard_title blue">Movie Title</h1>
+            <div class="postcard_subtitle small">
+              <time datetime="2020-05-25 12:00:00">
+                <i class="releasetime fas fa-calendar-alt mr-2"></i>Mon, May
+                25th 2020
+              </time>
+            </div>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              quis suscipit consectetur enim reprehenderit. Illum possimus
+              suscipit, et iure omnis adipisci ad unde sint ullam inventore quae
+              at, assumenda modi.
+            </div>
+            <ul class="postcard__tagbox">
+              <li class="genre"><i class="fas fa-tag mr-2"></i> Genre</li>
+              <li class="language">
+                <i class="fas fa-language mr-2"></i> Language
+              </li>
+              <li class="tag__item play blue">
+                <a href="#">
+                  <i class="trailer fas fa-play mr-2"></i> Play Trailer
+                </a>
+              </li>
+              <li class="duration">
+                <i class="fas fa-clock mr-2"></i> 55 min.
+              </li>
+              <li class="imdb"><i class="fas fa-imdb mr-2"></i> Imdb</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SEATS  -->
+    <div class="container container-fluid seats-container">
+      <div class="seats d-block">
+        <div class="first-line m-1 d-flex justify-content-evenly">
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat reserved"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat reserved"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+
+          <i class="fa-solid fa-couch fa-2x m-2 seat reserved"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+        </div>
+        <div class="first-line m-1 d-flex justify-content-evenly">
+          <i class="fa-solid fa-couch fa-2x m-2 seat reserved"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat reserved"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat reserved"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+        </div>
+        <div class="first-line m-1 d-flex justify-content-evenly">
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat reserved"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+        </div>
+        <div class="first-line m-1 d-flex justify-content-evenly">
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat reserved"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+        </div>
+        <div class="first-line m-1 d-flex justify-content-evenly">
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat reserved"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+        </div>
+        <div class="first-line m-1 d-flex justify-content-evenly">
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat reserved"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat reserved"></i>
+          <i class="fa-solid fa-couch fa-2x m-2 seat"></i>
+
+          <i class="fa-solid fa-couch fa-2x m-2 seat reserved"></i>
+        </div>
+
+        <br />
+        <br />
+      </div>
+
+      <div class="inform">
+        <i class="fa-solid fa-couch m-2 seat reserved"> : reserved </i>
+        <i class="fa-solid fa-couch m-2 sampleseat"> : available </i>
+        <i class="fa-solid fa-couch m-2 sampleselected"> : selected </i>
+      </div>
+      <p class="text text-info h2">
+        You have selected <span id="count">0</span> seats for a price of $<span
+          id="total"
+          >0</span
+        >
+      </p>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
